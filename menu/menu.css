@@ -1,0 +1,804 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+
+header {
+    background-color: #000c28;
+    height: 10rem;
+}
+.header-start {
+    align-items: center;
+    height: 58px;
+    background: linear-gradient(90deg, #f01543 -1.58%, #fe724c 100%);
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-start-left .head-icon {
+    display: flex;
+    color: white;
+    gap: 15px;
+    font-size: 18px;
+    
+}
+.header-start-left .head-icon a {
+    color: white;
+    text-decoration: none;  
+}
+.header-start-middle {
+    font-size: 18px;
+    color: #000929;
+}
+.header-start-middle a{
+ color: #000929;
+ 
+}
+.header-start-right .head-icon{
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.header-start-right .head-icon a {
+   color: white;
+   text-decoration: none;
+}
+.header-end {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px; 
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.head-nav nav ul {
+    display: flex;
+    gap: 15px;
+}
+.head-nav nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.head-input {
+    display: flex;
+    position: relative;
+}
+.head-input input {
+    width: 217px;
+    height: 53px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding: 13px 20px;
+    border-radius: 10px;
+    background: #122833 ;
+    border: 1px solid #6c727f ;
+    color: #fff ;
+       
+}
+.head-input-search {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.head-input-search i {
+    color:  #6c727f;
+    font-size: 25px;
+}
+.nav-icons {
+    gap: 20px;
+    display: flex;
+    text-align: center;
+}
+.nav-icons .nav-icon {
+    position: relative;
+    background-color: #0f212b ;
+    border: 1px solid #6c727f ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-icons .nav-icon i {
+    padding-top: 15px;
+    color: white;
+    font-size: 20px;
+}
+.head-nav-right {
+    display: flex;
+    gap: 45px;
+    margin-right: 25px;
+    padding-top: 10px ;
+}
+.numb {
+    text-align: center;
+    padding-bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: #f01543;
+    border-radius: 50%;
+    position:absolute  ;
+    right: 0px;
+    top: 0;
+
+}
+.numb span {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.head-buttons {
+    display: flex;
+    gap: 20px;
+}
+.head-buttons .head-button button {
+    width: 120px;
+    height: 55px;
+    border-radius: 15px;
+    font-size: 17px;
+   cursor: pointer;
+    
+}
+.login:hover {
+    border: #b80f34;
+    transition: 0.6s;
+    background-color: white;
+    color: #b80f34;
+}
+.login {
+    color: white;
+    background-color: #f01543;
+    border: none;
+}
+.signup:hover {
+    transition: 0.6s;
+    background-color: #b80f34;
+}
+.signup {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+}
+.all-food  {
+    background-image: url(./all\ food.png)  ;
+    background-size: cover;
+    height: 25rem;
+} 
+.all-food h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -.48px;
+    color: #fff;
+}
+.all-food-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+   flex-direction: column;
+}
+.food-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-title a {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -.24px;
+    color: #fff;
+    text-decoration: none;
+}
+.food-title span {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -.24px;
+    color: #fff;
+}
+
+.food-title span svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+}
+
+
+.catagori {
+    display: flex;
+
+    
+}
+.catagori1  {
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #000929;
+    border: 1px solid transparent;
+    border-right: 1.5px solid #f4f4f6;
+}
+.catagori1 a {
+    color: #000929;
+    text-decoration: none;
+   
+}
+.catagori-input input {
+    height: 58px;
+    width: 36rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    padding: .375rem .75rem;
+    border-radius: 10px;
+    background-color: #f9fafb;
+    border: 1px solid #f9fafb;
+    outline: none;
+}
+.catagori-input {
+    position: relative;
+}
+.catagori-input-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #f01543;
+    text-align: center;
+    line-height: 48px;    
+}
+
+.catagori-input-search svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.catagories {
+    padding-top: 6rem;
+    display: flex;
+    gap: 25px;
+    padding-left: 5rem;
+
+}
+.catagori-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 2rem;
+}
+.catagori-square {
+    cursor: pointer;
+    width: 57px;
+    height: 41px;
+    color: #fff;
+    background-color: #0d6efd;
+    border-radius: .25rem;
+    padding: .5rem 1rem;
+
+}
+.catagori-bar {
+    cursor: pointer;
+    width: 46px;
+    height: 40px;
+    padding: 8px 16px;
+    color: #0d6efd;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 18px;
+}
+.catagori-cards {
+    background-image: url(https://reservq.vercel.app/assets/all-food-bg-674ecdbb.png);
+    background-size: cover;
+    height: 107rem ;
+}
+.catagori_cards {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    /* padding-left: 85px;
+    padding-right: 85px ; */
+}
+.all-catagori-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.all-catagori-card {
+    background-color: #fff;
+    height: 31.5rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+.catagori_food {
+    padding: 20px;
+
+}
+.catagori-card-img {
+    position: relative;
+}
+.catagori-card-img:hover {
+    transition: 0.7s;
+    cursor: pointer;
+  transform: scale(1.1);
+}
+.catagori-card-img-left {
+    position: absolute;
+   top: 10px;
+   left: 10px;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+.catagori-card-img-left i {
+    font-size: 20px;
+    color: #f01543;
+}
+.catagori-card-img-right {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: #000929cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.catagori-food-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catagori-food-price-left h3{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: -1px;
+    color: #f01543;
+}
+.catagori-food-price-right h5 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #000929;;
+}
+.catagori-food-text h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -.24px;
+    color: #000929;
+    padding-bottom: 10px;
+}
+.catagori-food-text_ {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    
+}
+
+.catagori-food-end {
+   
+    padding-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.catagori-food-end button {
+    color: #6c727f;
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1.5px solid rgba(211, 213, 218, .5);
+    border-radius: 10px;
+}
+.catagori-food-end button:hover {
+    cursor: pointer;
+    background-color: #f01543;
+    transition: 0.6s;
+    color: white;
+}
+
+.left-faq-head h2{
+    align-items: ;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -.48px;
+    color: #000929;
+    padding-bottom: 3rem;
+}
+
+.faq1 .faqq{
+    line-height: 145%;
+    display: flex;
+    padding: 20px;
+  justify-content: space-between;
+    border-radius: 8px;
+    width: 544px;
+    height: 59px;
+    border: none;
+    border-bottom: 1px solid #f01543;
+   font-size: 18px;
+   box-shadow: 0 1px 40px #0000000a;
+}
+.faq1 p {
+    width: 544px;
+    height: 109px;
+    color: #4d5465;
+    font-size: 18px;
+    line-height: 145%;
+    padding: 20px;
+    font-weight: 400;
+}
+.faq-button button{
+    line-height: 145%;
+    display: flex;
+    padding: 20px;
+  justify-content: space-between;
+    border-radius: 8px;
+    width: 544px;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+   box-shadow: 0 1px 40px #0000000a;
+   margin-top: 2rem;
+}
+.Faq {
+    display: flex;
+    padding-left: 7rem;
+    gap: 5rem;
+    background-image: url(https://reservq.vercel.app/assets/faq-bg-7118ca12.png);
+    background-size: contain;
+    height: 50rem;
+}
+.left-faq {
+    padding-top: 3rem;
+}
+
+.faq-image1 img{
+    width: 364px;
+    height: 245px;
+}
+.faq-image2 img{
+    width: 200px;
+    height: 246px;
+}
+.faq-image3 img{
+    width: 200px;
+    height:246px ;
+}
+
+.faq-image4 img {
+    width: 364px;
+    height: 248px;
+}
+.right-faq {
+    padding-top: 10rem;
+    margin-left: 4rem;
+   flex-wrap: wrap;
+}
+
+.image-faq-top {
+    padding-bottom: 1.2rem;
+    gap: 1.5rem;
+    display: flex;
+}
+.image-faq-bottom {
+    gap: 1.5rem;
+    display: flex;
+}
+.faq-image2  {
+    position: relative;
+    
+}
+.faq-img-title {
+    position: absolute;
+    top:100px;
+    left: 38px;
+    transform: translate(0%,-15%);
+    width: 100%;
+    height: 100%;
+
+    
+    color: white;
+}
+.faq-img-title span {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: -.32px;
+    color: #fff;
+}
+.faq-img-title h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.faq-img-gradient {
+    background-color: #000929d6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    border-radius: 10px;
+}
+.faq-image3 {
+    position: relative;
+}
+.faq-img3-gradient {
+    background-color: #f01543d6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    border-radius: 10px;
+}
+.faq-img3-title span {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: -.32px;
+    color: #fff;
+}
+.faq-img3-title h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+.faq-img3-title {
+    position: absolute;
+    top:100px;
+    left: 38px;
+    transform: translate(0%,-15%);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.restaurant {
+    background-image: url(https://reservq.vercel.app/assets/rest-bg-542f355f.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
+    
+}
+.restaurant .restaurant-container {
+    display: flex;
+    padding-left: 7rem;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 8rem;
+   
+}
+.restaurant-left h2 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -.48px;
+}
+.restaurant-left h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 145%;
+    letter-spacing: -.09px;
+    color: #e5e6eb;
+    padding-top: 24px;
+    padding-right: 106px;
+}
+
+.restaurant-buttons {
+  padding-top: 3rem;
+    display: flex;
+    gap: 20px;
+}
+.restaurant-buttons button{
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid #e5e6eb;
+    background: #fff;
+    width: 225px;
+    height: 68px;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.right-button button {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.rest-img-right img { 
+    width: 558px;
+    height: 335px;
+}
+
+footer {
+    background-image: url(https://reservq.vercel.app/assets/Footers-bg-7148736e.png);
+    background-size: cover;
+    height: 30rem;
+    background-repeat: no-repeat;
+}
+.footer-start {
+    padding-top: 6rem;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.footer-left-title h4 {
+    color: #f4f4f6;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 148%;
+    letter-spacing: -.09px;
+    padding-bottom: 10px;
+}
+.footer-left-icons {
+    padding-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+.footer-left-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #19213e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.footer-middle {
+    padding-top: 3rem;
+    display: flex;
+    gap: 5rem;
+}
+.footer-left-icon i {
+    color: #747681;
+    font-size: 20px;
+}
+
+.footer-middle-title h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -.24px;
+}
+.footer-middle-title a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -.09px;
+    color: #fff;
+}
+.footer-right h3 {
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -.24px;
+}
+.footer-right h6 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -.1px;
+    color: #fff;
+}
+.right-input input {
+    width: 261px;
+    height: 56px;
+    background: rgba(231, 229, 234, .2);
+    border-radius: 10px;
+    padding-left: 64px;
+    color: #fff;
+    border: 1px solid rgba(231, 229, 234, .2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.right-input {
+    position: relative;
+}
+.right-input-img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+.footer-right-login {
+    padding-bottom: 10px;
+    display: flex;
+    gap: 20px;
+}
+.footer-right .right-button button{
+ width: 140px;
+ height: 56px;
+ font-size: 16px;
+ font-weight: 500;
+ line-height: 28px;
+ background-color: #f01543;
+ color: #fff;
+ padding: 13px 32px;
+ border-radius: 10px;
+ letter-spacing: -.1px;
+ text-align: center;
+}
+.footer-right .right-button button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #f01543;
+    transition: 0.6s;
+}
+.footer-right-image {
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.footer-end {
+    text-align: center;
+    margin-top: 5rem;
+    background-color: #000929;
+    padding: 17px 0;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    color: white;
+}
